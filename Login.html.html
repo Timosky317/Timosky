@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page</title>
+</head>
+<body>
+    <br>
+	<div class="header">
+		<h1>Student Login</h1>
+	</div>
+	
+	<form method="post" action="login..html">
+
+		<div class="input-group">
+			<label><i class="fas fa-user fa-1x cust" aria-hidden="true"></i> Student Username</label>
+			<input type="text" name="username" ></i>
+		</div>
+		
+		<div class="input-group">
+			<label><i class="fas fa-lock fa-1x cust" aria-hidden="true"></i> Student Password</label>
+			<input type="password" name="password" id="myInput">
+		</div>
+		<div>
+		<input type="checkbox" onclick="myFunction()">Show password
+		</div>
+		
+		<div class="input-group">
+			<button type="submit" class="btn" name="login_user">Login</button>
+		</div>
+            <div class="backback">
+		<p>
+			Not yet a member? <a href="register.html"> Sign up</a>
+		</p>  
+            </div>
+	</form>
+	<script>
+	function myFunction()
+	{
+		var x=document.getElementById("myInput");
+		if(x.type=="password")
+		{
+			x.type="text";
+		}
+		else
+		{
+			x.type="password";
+		}
+	}
+	
+	</script>
+	<style > body {
+	font-size: 125%;
+	 background: url('300.PNG') no-repeat;
+    background-size: cover;
+    font-family: Arial;
+	background-color: blue;
+	}
+	</style>
+</body>
+<footer style="align:">&COPY;Stay Up_Pray Up Systems</footer>
+</html>
